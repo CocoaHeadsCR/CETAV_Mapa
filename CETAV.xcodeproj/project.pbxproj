@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111186161C6ED8BF007EF512 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		11F382951C6ED0BB00CA3298 /* CETAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CETAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F382981C6ED0BB00CA3298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F3829A1C6ED0BB00CA3298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		11F3828C1C6ED0BB00CA3298 = {
 			isa = PBXGroup;
 			children = (
+				111186161C6ED8BF007EF512 /* MapKit.framework */,
 				11F382971C6ED0BB00CA3298 /* CETAV */,
 				11F382961C6ED0BB00CA3298 /* Products */,
 			);
@@ -324,6 +326,7 @@
 				11F382A91C6ED0BB00CA3298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
