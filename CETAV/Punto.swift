@@ -19,3 +19,9 @@ class Punto {
     self.subtitulo = subtitulo
   }
 }
+
+extension Punto: CustomDebugStringConvertible {
+  var debugDescription: String {
+    return "🌎🌍🌏\n\t• \(self.coordenadas)\n\t• \(self.titulo)\n\t• \(self.subtitulo)"
+  }
+}

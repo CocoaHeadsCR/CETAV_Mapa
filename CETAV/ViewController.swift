@@ -17,6 +17,9 @@ class ViewController: UIViewController {
   
   // MARK: Propiedades
   let manager = CLLocationManager()
+  let cargador = CargadorDatos()
+  
+  // MARK: Ciclo de vida del VC
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,6 +28,16 @@ class ViewController: UIViewController {
     manager.requestWhenInUseAuthorization()
     self.mapa.showsUserLocation = true
     self.mapa.delegate = self
+  }
+  
+  // MARK: Eventos
+  
+  @IBAction func agregarPuntos_tapped(sender: UIButton) {
+    self.cargador.cargarDatos { (puntos) -> () in
+      for punto in puntos {
+        print(punto)
+      }
+    }
   }
 }
 

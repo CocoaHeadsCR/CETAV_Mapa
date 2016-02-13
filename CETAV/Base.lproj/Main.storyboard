@@ -23,11 +23,20 @@
                                     <constraint firstAttribute="height" constant="400" id="EEZ-dz-iVX"/>
                                 </constraints>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-LC-vtP">
+                                <rect key="frame" x="246.5" y="480" width="107" height="30"/>
+                                <state key="normal" title="Agregar Puntos"/>
+                                <connections>
+                                    <action selector="agregarPuntos_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZJ-zW-dZ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9V1-S6-o7r" secondAttribute="trailing" id="1eX-Ox-9aK"/>
                             <constraint firstItem="9V1-S6-o7r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CV0-AJ-H6H"/>
+                            <constraint firstItem="Hur-LC-vtP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7F-tq-qQs"/>
+                            <constraint firstItem="Hur-LC-vtP" firstAttribute="top" secondItem="9V1-S6-o7r" secondAttribute="bottom" constant="60" id="aS8-kJ-pkL"/>
                             <constraint firstItem="9V1-S6-o7r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jlb-52-7YW"/>
                         </constraints>
                     </view>
