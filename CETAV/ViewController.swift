@@ -24,7 +24,17 @@ class ViewController: UIViewController {
     // Tenemos que solicitar al usuario permiso para acceder a su ubicación
     manager.requestWhenInUseAuthorization()
     self.mapa.showsUserLocation = true
-    self.mapa.centerCoordinate = self.mapa.userLocation.coordinate
+    self.mapa.delegate = self
   }
 }
 
+// MARK: - MKMapViewDelegate
+
+extension ViewController: MKMapViewDelegate {
+  func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+    mapView.setCenterCoordinate(userLocation.coordinate, animated: true)
+
+//    let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 2000, 2000)
+//    mapView.setRegion(region, animated: true)
+  }
+}
