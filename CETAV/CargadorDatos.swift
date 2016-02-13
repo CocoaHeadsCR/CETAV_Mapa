@@ -16,9 +16,9 @@ class CargadorDatos {
   }
   
   func cargarDatos(callback: [Punto] -> ()) -> Void {
-    let policia = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.889948, longitude: -84.036123), titulo: "Delegación de Policía", subtitulo: "Río Azul")
-    let mopt = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.889948, longitude: -84.036123), titulo: "Plantel del MOPT", subtitulo: "Bodega 87")
-    let iglesia = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.889948, longitude: -84.036123), titulo: "Filial San Bosco", subtitulo: "Iglesia")
+    let policia = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.53211, longitude: -84.02004), titulo: "Delegación de Policía", subtitulo: "Río Azul")
+    let mopt = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.53299, longitude: -84.02046), titulo: "Plantel del MOPT", subtitulo: "Bodega 87")
+    let iglesia = Punto(coordenadas: CLLocationCoordinate2D(latitude: 9.53327, longitude: -84.02065), titulo: "Filial San Bosco", subtitulo: "Iglesia")
     
     self.lugares.appendContentsOf([policia, mopt, iglesia])
     
