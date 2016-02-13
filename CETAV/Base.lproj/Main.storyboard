@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="400" id="EEZ-dz-iVX"/>
                                 </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-LC-vtP">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-LC-vtP">
                                 <rect key="frame" x="246.5" y="480" width="107" height="30"/>
                                 <state key="normal" title="Agregar Puntos"/>
                                 <connections>
@@ -41,6 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="agregarBtn" destination="Hur-LC-vtP" id="Lif-YT-ktk"/>
                         <outlet property="mapa" destination="9V1-S6-o7r" id="4d5-Xs-4eA"/>
                     </connections>
                 </viewController>
