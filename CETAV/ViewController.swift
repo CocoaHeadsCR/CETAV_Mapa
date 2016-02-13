@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
   // MARK: Propiedades de UI
   @IBOutlet weak var mapa: MKMapView!
+  @IBOutlet weak var agregarBtn: UIButton!
   
   // MARK: Propiedades
   let manager = CLLocationManager()
@@ -35,17 +36,15 @@ class ViewController: UIViewController {
   @IBAction func agregarPuntos_tapped(sender: UIButton) {
     self.cargador.cargarDatos { (puntos) -> () in
       print(puntos)
-      var anotaciones = [MKPointAnnotation]()
+
       for punto in puntos {
         let anotacion = MKPointAnnotation()
         anotacion.coordinate = punto.coordenadas
         anotacion.title = punto.titulo
         anotacion.subtitle = punto.subtitulo
         
-        anotaciones.append(anotacion)
+        self.mapa.addAnnotation(anotacion)
       }
-      
-      self.mapa.addAnnotations(anotaciones)
     }
   }
 }
@@ -61,5 +60,7 @@ extension ViewController: MKMapViewDelegate {
     // Y cuya distancia longitudinal y latitudinal es de 2Kms
     let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 2000, 2000)
     mapView.setRegion(region, animated: true)
+    
+    self.agregarBtn.enabled = true
   }
 }
