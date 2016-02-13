@@ -12,6 +12,7 @@
 		11F3829E1C6ED0BB00CA3298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F3829C1C6ED0BB00CA3298 /* Main.storyboard */; };
 		11F382A01C6ED0BB00CA3298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F3829F1C6ED0BB00CA3298 /* Assets.xcassets */; };
 		11F382A31C6ED0BB00CA3298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F382A11C6ED0BB00CA3298 /* LaunchScreen.storyboard */; };
+		11F382AF1C6ED52B00CA3298 /* Punto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F382AE1C6ED52B00CA3298 /* Punto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		11F3829F1C6ED0BB00CA3298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F382A21C6ED0BB00CA3298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F382A41C6ED0BB00CA3298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F382AE1C6ED52B00CA3298 /* Punto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		11F382971C6ED0BB00CA3298 /* CETAV */ = {
 			isa = PBXGroup;
 			children = (
+				11F382B01C6ED59000CA3298 /* Modelos */,
 				11F382981C6ED0BB00CA3298 /* AppDelegate.swift */,
-				11F3829A1C6ED0BB00CA3298 /* ViewController.swift */,
-				11F3829C1C6ED0BB00CA3298 /* Main.storyboard */,
-				11F3829F1C6ED0BB00CA3298 /* Assets.xcassets */,
-				11F382A11C6ED0BB00CA3298 /* LaunchScreen.storyboard */,
+				11F382B11C6ED59600CA3298 /* Controladores */,
+				11F382B21C6ED59F00CA3298 /* Recursos */,
 				11F382A41C6ED0BB00CA3298 /* Info.plist */,
 			);
 			path = CETAV;
+			sourceTree = "<group>";
+		};
+		11F382B01C6ED59000CA3298 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				11F382AE1C6ED52B00CA3298 /* Punto.swift */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		11F382B11C6ED59600CA3298 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				11F3829A1C6ED0BB00CA3298 /* ViewController.swift */,
+			);
+			name = Controladores;
+			sourceTree = "<group>";
+		};
+		11F382B21C6ED59F00CA3298 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				11F382B31C6ED5A800CA3298 /* UI */,
+				11F3829F1C6ED0BB00CA3298 /* Assets.xcassets */,
+			);
+			name = Recursos;
+			sourceTree = "<group>";
+		};
+		11F382B31C6ED5A800CA3298 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11F3829C1C6ED0BB00CA3298 /* Main.storyboard */,
+				11F382A11C6ED0BB00CA3298 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F382AF1C6ED52B00CA3298 /* Punto.swift in Sources */,
 				11F3829B1C6ED0BB00CA3298 /* ViewController.swift in Sources */,
 				11F382991C6ED0BB00CA3298 /* AppDelegate.swift in Sources */,
 			);
