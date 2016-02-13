@@ -31,6 +31,9 @@
                             <constraint firstItem="9V1-S6-o7r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jlb-52-7YW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapa" destination="9V1-S6-o7r" id="4d5-Xs-4eA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
