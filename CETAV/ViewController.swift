@@ -36,15 +36,17 @@ class ViewController: UIViewController {
   @IBAction func agregarPuntos_tapped(sender: UIButton) {
     self.cargador.cargarDatos { (puntos) -> () in
       print(puntos)
-
-      for punto in puntos {
+      
+      let anotaciones = puntos.map { punto -> MKPointAnnotation in
         let anotacion = MKPointAnnotation()
         anotacion.coordinate = punto.coordenadas
         anotacion.title = punto.titulo
         anotacion.subtitle = punto.subtitulo
         
-        self.mapa.addAnnotation(anotacion)
+        return anotacion
       }
+      
+      self.mapa.addAnnotations(anotaciones)
     }
   }
 }
