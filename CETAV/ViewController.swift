@@ -32,9 +32,12 @@ class ViewController: UIViewController {
 
 extension ViewController: MKMapViewDelegate {
   func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
-    mapView.setCenterCoordinate(userLocation.coordinate, animated: true)
+    // Centramos el mapa en el usuario actual
+//    mapView.setCenterCoordinate(userLocation.coordinate, animated: true)
 
-//    let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 2000, 2000)
-//    mapView.setRegion(region, animated: true)
+    // Centramos el mapa en una región cuyo centro es la ubicación del usuario
+    // Y cuya distancia longitudinal y latitudinal es de 2Kms
+    let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 2000, 2000)
+    mapView.setRegion(region, animated: true)
   }
 }
