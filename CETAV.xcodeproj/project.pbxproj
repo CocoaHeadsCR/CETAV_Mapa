@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		111186161C6ED8BF007EF512 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		11204AF31C6EDCE400E38D11 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		11F382951C6ED0BB00CA3298 /* CETAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CETAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F382981C6ED0BB00CA3298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F3829A1C6ED0BB00CA3298 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 			children = (
 				11F382B41C6ED60900CA3298 /* CargadorDatos.swift */,
 				11F3829A1C6ED0BB00CA3298 /* ViewController.swift */,
+				11204AF31C6EDCE400E38D11 /* Location.gpx */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
